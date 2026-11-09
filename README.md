@@ -4,7 +4,7 @@ Shows which fruit and vegetables are in season where you live, worked out from 3
 
 - **Status:** Live
 - **Live at:** https://whats-in-season-app.kohjakob.com, and https://season.kohjakob.com redirects to it
-- **Repo:** [kohjakob/whats-in-season-app](https://github.com/kohjakob/whats-in-season-app) (public), inside `Web-App/`
+- **Repo:** [kohjakob/Whats-In-Season](https://github.com/kohjakob/Whats-In-Season) (private)
 
 ## Folders
 
