@@ -30,8 +30,6 @@ conda run -n whats-in-season-web-app pnpm validate
 
 ## Deploy
 
-**Live at:** https://whats-in-season-app.kohjakob.com, and https://season.kohjakob.com redirects to it.
-
 **Where it runs:** Static files on a DigitalOcean droplet in `/var/www/whats-in-season-app.kohjakob.com`, served by nginx. Server config is in `deploy/nginx/`.
 
 **Needs:** SSH access as `root`. The default host is set in `scripts/deploy.sh`; `DEPLOY_HOST` overrides it.
