@@ -34,18 +34,15 @@ body {
 a { color: var(--accent); }
 button, input { font: inherit; color: inherit; }
 
-/* Bottom padding clears the fixed portfolio bar so it never covers content */
-.app { max-width: 1100px; width: 100%; margin: 0 auto; padding: 24px 16px 8rem; flex: 1 0 auto; }
+.app { max-width: 1100px; width: 100%; margin: 0 auto; padding: 24px 16px; flex: 1 0 auto; }
 .masthead { margin: 0; }
 .hero-strip { display: block; width: 100%; height: auto; margin: 0 0 20px; user-select: none; -webkit-user-drag: none; }
 .masthead h1 { font-family: var(--font-display); font-weight: 800; font-size: 40px; line-height: 1.1; margin: 0; letter-spacing: -0.01em; color: var(--text-heading); }
 .masthead .nowrap { white-space: nowrap; }
-.masthead .wip { margin: 10px 0 0; font-size: 17px; line-height: 1.5; color: var(--text-2); }
-.masthead .wip a { color: var(--cta); text-decoration: underline; text-underline-offset: 3px; }
 .masthead .fit-line { white-space: nowrap; }
 @media (min-width: 601px) { .masthead .fit-line::after { content: ' '; } }
 .mobile-break { display: none; }
-@media (max-width: 629px) { .mobile-break { display: inline; } .masthead h1 { font-size: 34px; text-align: center; } .masthead .wip { text-align: center; font-size: 12px; } .hero-strip { width: 80%; margin: 0 auto 20px; } }
+@media (max-width: 629px) { .mobile-break { display: inline; } .masthead h1 { font-size: 34px; text-align: center; } .hero-strip { width: 80%; margin: 0 auto 20px; } }
 
 .search { position: relative; display: flex; gap: 0; flex-wrap: wrap; margin: 24px 0 0; }
 .search input {
@@ -137,18 +134,5 @@ button, input { font: inherit; color: inherit; }
 .foot { margin-top: 28px; color: var(--text-3); font-size: 12.5px; }
 .foot p { margin: 4px 0; }
 
-/* Portfolio bar, styled after kohjakob.com: same font, colors and metrics as its footer.
-   Fixed to the viewport bottom; .app's bottom padding keeps content clear of it. */
-.portfolio-bar { --kj-link: #2c5aa0; --kj-link-hover: #c0392b; --kj-gray: #999999; --kj-gray-light: #cfcfcf; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: #ffffff; box-shadow: 0 -1px 2px rgba(20, 20, 30, 0.04), 0 -8px 24px rgba(20, 20, 30, 0.06); font-family: 'Murecho', 'Libre Baskerville', serif; font-weight: 400; font-size: 1rem; line-height: 1.6; -webkit-font-smoothing: auto; color: var(--kj-gray); }
-.portfolio-bar-inner { max-width: 864px; margin: 0 auto; padding: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.25rem 1.5rem; }
-.portfolio-bar a { color: var(--kj-link); text-decoration: none; }
-.portfolio-bar .portfolio-explore { display: inline-flex; align-items: center; gap: 0.75rem; }
-.portfolio-bar .portfolio-avatar { width: 32px; height: 32px; /* Negative margin keeps the row exactly one 1.6em text line tall, matching kohjakob.com */ margin: calc((1.6em - 32px) / 2) 0; border-radius: 50%; object-fit: cover; flex: none; }
-.portfolio-bar .portfolio-imprint { color: var(--kj-gray-light); font-variant-emoji: text; white-space: nowrap; }
-.portfolio-bar a:hover { color: var(--kj-link-hover); text-decoration: underline; }
-@media (max-width: 629px) {
-  .portfolio-bar-inner { padding: 1.25rem 1rem; justify-content: center; text-align: center; }
-  .portfolio-bar .portfolio-explore { display: block; text-align: center; }
-  .portfolio-bar .portfolio-explore > span { display: inline; }
-  .portfolio-bar .portfolio-avatar { display: inline-block; vertical-align: middle; margin: -4px 0.5rem 0 0; }
-}
+.site-footer { padding: 1.5rem 1rem; text-align: center; font-size: 0.875rem; }
+.site-footer a { color: #6b7280; }

@@ -11,7 +11,7 @@ import { NowArrow } from './NowArrow';
 import { Handwritten } from './Handwritten';
 import { FitTitle } from './FitTitle';
 import produceStrip from './assets/produce-strip.webp';
-import { PortfolioBar } from './PortfolioBar';
+import { Footer } from './Footer';
 import { defaultSelection } from './popularity';
 import { weekLabelLong } from './ridge';
 import { LANGS, LANG_LABEL, produceName, isLang, posterLabels, type Lang } from './i18n';
@@ -180,13 +180,6 @@ export function App() {
       <header className="masthead">
         <img className="hero-strip" src={produceStrip} alt="" aria-hidden="true" width={2200} height={342} decoding="async" />
         <FitTitle fitLine="What's in season in" rest={<>your area?</>} />
-        <p className="wip">
-          This is a work in progress, improvements via{' '}
-          <a href={REPO_URL} target="_blank" rel="noopener">
-            GitHub
-          </a>{' '}
-          are welcome
-        </p>
       </header>
 
       <LocationSearch onSelect={setPlace} busy={busy} />
@@ -271,9 +264,15 @@ export function App() {
       <div className="foot">
         <p>Peak: hits its best nine years out of ten. Available: a typical year, outside peak. Storage: after harvest, for produce that keeps.</p>
         <p>Climate data from the Open-Meteo ERA5 archive, NASA POWER as backup. Produce thresholds from FAO EcoCrop (CC BY 4.0), hand-curated.</p>
+        <p>
+          Work in progress at{' '}
+          <a href={REPO_URL} target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </p>
       </div>
     </main>
-    <PortfolioBar />
+    <Footer />
     </>
   );
 }

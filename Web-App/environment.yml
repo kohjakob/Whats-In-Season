@@ -1,0 +1,5 @@
+name: whats-in-season-web-app
+channels:
+  - conda-forge
+dependencies:
+  - nodejs=22
