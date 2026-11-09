@@ -20,7 +20,7 @@ const categoryOf = new Map(PRODUCE.map((c) => [c.id, c.category as Category]));
 const PRODUCE_IDS = new Set(PRODUCE.map((c) => c.id));
 const catOf = (id: string): Category => categoryOf.get(id)!;
 const hasFresh = (r: ChartRow) => r.spans.some((s) => s.level !== 'stored');
-const REPO_URL = 'https://github.com/kohjakob/whats-in-season-app';
+const REPO_URL = 'https://github.com/kohjakob/Whats-In-Season';
 /** Shown until the visitor picks somewhere */
 const DEFAULT_PLACE: Place = { name: 'Vienna, Austria', lat: 48.208, lon: 16.373 };
 /** Preset shown on load */
